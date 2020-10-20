@@ -8,7 +8,7 @@ O3as: Ozone assessment service's documentation
 This initiative is part of the `EOSC-Synergy <https://www.eosc-synergy.eu/>`_ Project.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents:
 
    o3as/docs/source/index
