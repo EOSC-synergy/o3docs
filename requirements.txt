@@ -1,1 +1,2 @@
+flask
 -e git+https://git.scc.kit.edu/synergy.o3as/o3as.git#egg=o3as
