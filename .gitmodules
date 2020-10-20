@@ -1,0 +1,3 @@
+[submodule "o3as"]
+	path = o3as
+	url = https://git.scc.kit.edu/synergy.o3as/o3as/
