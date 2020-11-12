@@ -1,3 +1,6 @@
+# If one wants to create documentation for local hosting, 
+# this Dockerfile can be used to generate necessary Docker Image.
+#
 # Dockerfile has following Arguments: branch
 # branch - user repository branch to clone (default: master, other option: test)
 #
@@ -5,6 +8,11 @@
 # $ docker build -t <dockerhub_user>/<dockerhub_repo> --build-arg arg=value .
 # or using default args:
 # $ docker build -t <dockerhub_user>/<dockerhub_repo> .
+#
+# Usage example:
+# $ docker run --rm -ti -v $PWD:/srv/docs_out \
+#   -e HOSTUSER=$(id -u) -e HOSTGROUP=$(id -g) <dockerhub_user>/<dockerhub_repo>
+#
 
 # Base image, e.g. ubuntu:bionic
 FROM ubuntu:20.04
@@ -36,15 +44,15 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
 
 WORKDIR /srv/
 
-# Install user app
-RUN if [ -d o3as.data.kit.edu.git ]; then \
-        cd o3as.data.kit.edu && git submodule update --init --recursive ; \
-    else git clone --recurse-submodules https://git.scc.kit.edu/synergy.o3as/o3as.data.kit.edu.git && \
-         cd o3as.data.kit.edu; fi && \
-    pip3 install --no-cache -r requirements.txt && \
-    rm -rf /root/.cache/pip/* && \
-    rm -rf /tmp/*
+ENV DOCSREPO "https://git.scc.kit.edu/synergy.o3as/o3as.data.kit.edu.git"
+ENV BUILDTARGET "html"
+ENV HOSTUSER 1000
+ENV HOSTGROUP 1000
 
-WORKDIR /srv/o3as.data.kit.edu
+# Script to generate docs
+# N.B. build_docs.sh needs:
+# ${DOCSREPO}, ${BUILDTARGET}, ${HOSTUSER}, ${HOSTGROUP} environments to be set
+ADD ./build_docs.sh /srv
+RUN chmod +x build_docs.sh
 
-CMD ["make", "html"]
+CMD ["/srv/build_docs.sh"]

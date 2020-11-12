@@ -5,7 +5,13 @@
 
 O3as: Ozone assessment service's documentation
 ==========================================================
-This initiative is part of the `EOSC-Synergy <https://www.eosc-synergy.eu/>`_ Project.
+O3as is a service within the framework of the European Open Science Cloud-Synergy (`EOSC-Synergy <https://www.eosc-synergy.eu/>`_) project, 
+mainly for scientists working on the Chemistry-Climate Model Initiative (`CCMI <http://blogs.reading.ac.uk/ccmi/ccmi-phase-two/>`_) 
+for the quadrennial global assessment of ozone depletion (https://www.esrl.noaa.gov/csl/assessments/ozone/2018/) due in 2022. 
+The recent ozone assessment report consists of six chapters and five appendices with about 25 people actively working on each chapter 
+and a multitude of people working in support of the preparation of the document. 
+The O3as service shall provide an invaluable tool to extract ozone trends from large climate prediction model data to produce 
+figures of stratospheric ozone trends in publication quality, in a coherent way.
 
 .. toctree::
    :maxdepth: 3
