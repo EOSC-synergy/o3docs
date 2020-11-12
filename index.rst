@@ -18,6 +18,7 @@ figures of stratospheric ozone trends in publication quality, in a coherent way.
    :caption: Contents:
 
    o3as/docs/source/index
+   o3skim/docs/index
 
 Indices and tables
 ==================
