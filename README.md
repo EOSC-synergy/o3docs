@@ -1,11 +1,7 @@
 # o3as.data.kit.edu
 
-[![Documentation Status](https://readthedocs.org/projects/o3as/badge/?version=dev)](https://o3as.readthedocs.io/en/latest/?badge=dev)
+ [![Documentation Status](https://readthedocs.org/projects/o3as/badge/?version=latest)](https://o3as.readthedocs.io/en/latest/?badge=latest)
 
-----
-'dev' branch!**
-
-----
 
 This is a placeholder for the O3AS VO, the Virtual Organisation for the
 Ozone Assessment.
