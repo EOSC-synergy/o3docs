@@ -13,8 +13,19 @@ The O3as service shall provide an invaluable tool to extract ozone trends from l
 figures of stratospheric ozone trends in publication quality, in a coherent way.
 
 
+User documentation
+========================================
+
+.. toctree::
+   :maxdepth: 3
+
+   user/index
+
+Component documentation
+=======================================
+
 o3api
-=========================================
+---------------------------------------
 
 .. toctree::
    :maxdepth: 3
@@ -30,7 +41,7 @@ o3api
 
 
 o3skim
-=========================================
+-----------------------------------------
 
 .. toctree::
    :maxdepth: 3
