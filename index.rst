@@ -24,7 +24,7 @@ User documentation
 Component documentation
 =======================================
 
-o3api
+O3as REST API (o3api)
 ---------------------------------------
 
 .. toctree::
@@ -36,17 +36,18 @@ o3api
 
 .. Add here the references after restructure the doc
 
-* :ref:`o3api/docs/source/index:O3as REST API`: <TBD>
+* :ref:`o3api/docs/source/index:General info`: General info
+* :ref:`o3api/docs/source/o3apirefs:o3api reference`: o3api references
 * <TBD>
 
 
-o3skim
+O3as Skimming (o3skim)
 -----------------------------------------
 
 .. toctree::
    :maxdepth: 3
    :hidden:
-   :caption: o3skim 
+   :caption: o3skim
 
    o3skim/docs/index
 
