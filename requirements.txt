@@ -1,3 +1,4 @@
 sphinx
 sphinx_rtd_theme
--e o3as/
+-e o3api/
+-e o3skim/

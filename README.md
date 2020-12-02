@@ -1,8 +1,8 @@
-# o3as.data.kit.edu
+# o3docs
 
 [![Documentation Status](https://readthedocs.org/projects/o3as/badge/?version=latest)](https://o3as.readthedocs.io/en/latest/?badge=latest)
 
-This is a placeholder for the O3AS VO, the Virtual Organisation for the
+This is a placeholder for the O3as service (and VO, the Virtual Organisation) for the
 Ozone Assessment.
 
 This initiative is part of the `EOSC-Synergy <https://www.eosc-synergy.eu/>`_ Project.

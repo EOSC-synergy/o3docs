@@ -1,9 +1,6 @@
 # If one wants to create documentation for local hosting, 
 # this Dockerfile can be used to generate necessary Docker Image.
 #
-# Dockerfile has following Arguments: branch
-# branch - user repository branch to clone (default: master, other option: test)
-#
 # To build the image:
 # $ docker build -t <dockerhub_user>/<dockerhub_repo> --build-arg arg=value .
 # or using default args:
@@ -18,9 +15,6 @@
 FROM ubuntu:20.04
 
 LABEL maintainer='V.Kozlov (KIT)'
-
-# What user branch to clone (!)
-ARG branch=master
 
 # Install system updates and tools
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
@@ -45,13 +39,14 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
 WORKDIR /srv/
 
 ENV DOCSREPO "https://git.scc.kit.edu/synergy.o3as/o3as.data.kit.edu.git"
+ENV DOCSREPO_BRANCH "master"
 ENV BUILDTARGET "html"
 ENV HOSTUSER 1000
 ENV HOSTGROUP 1000
 
 # Script to generate docs
 # N.B. build_docs.sh needs:
-# ${DOCSREPO}, ${BUILDTARGET}, ${HOSTUSER}, ${HOSTGROUP} environments to be set
+# ${DOCSREPO}, ${DOCSREPO_BRANCH}, ${BUILDTARGET}, ${HOSTUSER}, ${HOSTGROUP} environments to be set
 ADD ./build_docs.sh /srv
 RUN chmod +x build_docs.sh
 

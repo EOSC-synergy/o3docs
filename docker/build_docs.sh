@@ -12,47 +12,63 @@
 #
 # Expects two environment settings:
 # ${DOCSREPO}    - git repository
+# ${DOCSREPO_BRANCH} - branch of the git repository
 # ${BUILDTARGET} - what type of documents to produce (e.g. html)
 # ${HOSTUSER}  - user name or id at the host
 # ${HOSTGROUP} - user group or id at the host
-#
 
-SrcDocs="/src/docs_src"
+DocsSrc="/srv/docs_src"
 SharedOutput="/srv/docs_out"
 LogOutput="${SharedOutput}/build_docs_log.txt"
 DateNow=$(date +%Y-%m-%dT%H:%M:%S)
 
-echo "" >> ${LogOutput}
-echo "[NEW BUILD] ${DateNow}" >> ${LogOutput}
-message="[INFO] Git Repository to use: ${DOCSREPO}"
-echo $message && echo $message >> ${LogOutput}
+# Check if environment settings exist, if not set defaults
+[[ ${#DOCSREPO} -le 1 ]] && DOCSREPO="https://git.scc.kit.edu/synergy.o3as/o3as.data.kit.edu.git"
+[[ ${#DOCSREPO_BRANCH} -le 1 ]] && DOCSREPO_BRANCH="master"
+[[ ${#BUILDTARGET} -le 1 ]] && BUILDTARGET="html"
 
-message="[INFO] Build Target: ${BUILDTARGET}"
-echo $message && echo $message >> ${LogOutput}
 
-if [ -d ${SrcDocs} ]; then
-    cd ${SrcDocs} && Git_Clone=$(git submodule update --init --recursive)
-else
-    Git_Clone=$(git clone --recurse-submodules ${DOCSREPO} ${SrcDocs})
-    cd ${SrcDocs}
+if [ ! -d ${DocsSrc} ]; then
+    echo "[INFO] ${DocsSrc} is NOT found, creating..."
+    mkdir -p ${DocsSrc}
 fi
 
-echo "${Git_Clone}" >> ${LogOutput}
+if [ ! -d ${SharedOutput} ]; then
+    echo "[INFO] ${SharedOutput} is NOT found, creating..."
+    mkdir -p ${SharedOutput}
+fi
 
-Pip3_Install=$(pip3 install --no-cache -r requirements.txt)
-echo "${Pip3_Install}" >> ${LogOutput}
+# redirect everything below into LogOutput and Console (stdout + stderr)
+exec > >(tee -a ${LogOutput}) 2>&1
+
+echo ""
+echo "[NEW BUILD] ${DateNow}"
+echo "[INFO] Build Target: ${BUILDTARGET}"
+
+if [ -d "${DocsSrc}/.git" ]; then
+    echo "[INFO] .git in ${DocsSrc} is FOUND. Using LOCAL folder. Updating git submodules..."
+    echo "[INFO] Git Branch to use: ${DOCSREPO_BRANCH}"
+    cd ${DocsSrc} && Git_Clone=$(git checkout ${DOCSREPO_BRANCH} && git submodule update --init --recursive)
+else
+    echo "[INFO] .git in ${DocsSrc} is NOT found. Cloning REMOTE ${DOCSREPO}..."
+    echo "[INFO] Git Branch to use: ${DOCSREPO_BRANCH}"
+    cd ${DocsSrc} && Git_Clone=$(git clone -b ${DOCSREPO_BRANCH} --recurse-submodules ${DOCSREPO} .)
+
+fi
+
+echo "[INFO] Installing dependencies from the requirements.txt"
+pip3 install --no-cache -r requirements.txt
 
 Make_Log=$(make ${BUILDTARGET})
 status=$?
-echo $Make_Log >> ${LogOutput}
+echo $Make_Log
 if [ $status -eq 0 ]; then
-    message="[INFO] Moving _build directory to ${SharedOutput}"
-    echo $message && echo $message >> ${LogOutput}
-    cp -u -R ${SrcDocs}/_build/* ${SharedOutput}
-    message="[INFO] Change permissions of ${SharedOutput} to ${HOSTUSER}:${HOSTGROUP}"
-    echo $message && echo $message >> ${LogOutput}
-    chown -R ${HOSTUSER}:${HOSTUSER} ${SharedOutput}
+    echo "[INFO] Change permissions of ${DocsSrc} to ${HOSTUSER}:${HOSTGROUP}"
+    chown -R ${HOSTUSER}:${HOSTGROUP} ${DocsSrc}
+    echo "[INFO] Copying _build directory to ${SharedOutput}"
+    cp -u -R ${DocsSrc}/_build/* ${SharedOutput}
+    echo "[INFO] Change permissions of ${SharedOutput} to ${HOSTUSER}:${HOSTGROUP}"
+    chown -R ${HOSTUSER}:${HOSTGROUP} ${SharedOutput}
 else
-    message="[ERROR] make ${BUILDTARGET} failed, exit status = ${status}"
-    echo $message && echo $message  >> ${LogOutput}
+    echo "[ERROR] make ${BUILDTARGET} failed, exit status = ${status}"
 fi
