@@ -7,11 +7,11 @@
 # $ docker build -t <dockerhub_user>/<dockerhub_repo> .
 #
 # Usage example:
-# $ docker run --rm -ti -v $PWD:/srv/docs_out \
+# $ docker run --rm -ti -v $PWD:/srv/docs_src \
 #   -e HOSTUSER=$(id -u) -e HOSTGROUP=$(id -g) <dockerhub_user>/<dockerhub_repo>
 #
 
-# Base image, e.g. ubuntu:bionic
+# Base image, e.g. ubuntu:20.04
 FROM ubuntu:20.04
 
 LABEL maintainer='V.Kozlov (KIT)'
@@ -38,7 +38,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
 
 WORKDIR /srv/
 
-ENV DOCSREPO "https://git.scc.kit.edu/synergy.o3as/o3as.data.kit.edu.git"
+ENV DOCSREPO "https://git.scc.kit.edu/synergy.o3as/o3docs"
 ENV DOCSREPO_BRANCH "master"
 ENV BUILDTARGET "html"
 ENV HOSTUSER 1000

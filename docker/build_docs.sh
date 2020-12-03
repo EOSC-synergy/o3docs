@@ -23,7 +23,7 @@ LogOutput="${SharedOutput}/build_docs_log.txt"
 DateNow=$(date +%Y-%m-%dT%H:%M:%S)
 
 # Check if environment settings exist, if not set defaults
-[[ ${#DOCSREPO} -le 1 ]] && DOCSREPO="https://git.scc.kit.edu/synergy.o3as/o3as.data.kit.edu.git"
+[[ ${#DOCSREPO} -le 1 ]] && DOCSREPO="https://git.scc.kit.edu/synergy.o3as/o3docs"
 [[ ${#DOCSREPO_BRANCH} -le 1 ]] && DOCSREPO_BRANCH="master"
 [[ ${#BUILDTARGET} -le 1 ]] && BUILDTARGET="html"
 
