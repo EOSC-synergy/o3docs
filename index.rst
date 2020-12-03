@@ -36,7 +36,7 @@ O3as REST API (o3api)
 
 .. Add here the references after restructure the doc
 
-* :ref:`o3api/docs/source/index:General info`: General info
+* :ref:`o3api/docs/source/index:O3as REST API`: O3as REST API
 * :ref:`o3api/docs/source/o3apirefs:o3api reference`: o3api references
 * <TBD>
 
