@@ -52,9 +52,8 @@ O3as Skimming (o3skim)
    o3skim/docs/index
 
 * :ref:`o3skim/docs/index:Getting started`: Start skimming your ozone data.
-* :ref:`o3skim/docs/index:User guide`: Learn how to use o3skim functions.
 * :ref:`o3skim/docs/index:Developer guide`: Customize and support learning the details.
-* :ref:`o3skim/docs/index:See also`: Indices, authors and acknowledgements.
+* :ref:`o3skim/docs/index:Authors`: Authors and acknowledgements.
 
 
 Indices and tables
