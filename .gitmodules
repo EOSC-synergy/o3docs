@@ -1,3 +1,6 @@
 [submodule "o3skim"]
 	path = o3skim
 	url = https://git.scc.kit.edu/synergy.o3as/o3skim
+[submodule "o3api"]
+	path = o3api
+	url = https://git.scc.kit.edu/synergy.o3as/o3api.git
