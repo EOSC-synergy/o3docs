@@ -12,52 +12,48 @@ for the quadrennial global `assessment of ozone depletion <https://www.esrl.noaa
 The O3as service shall provide an invaluable tool to extract ozone trends from large climate prediction model data to produce 
 figures of stratospheric ozone trends in publication quality, in a coherent way.
 
-
-User documentation
-========================================
+.. Ozone Science
 
 .. toctree::
    :maxdepth: 3
+   :caption: Ozone Science
 
-   user/index
+   user/ozonescience
 
-Component documentation
-=======================================
+.. O3as for Users
 
-O3as REST API (o3api)
+.. toctree::
+   :maxdepth: 3
+   :caption: O3as for Users
+
+   user/userdocs
+
+
+O3as Components
 ---------------------------------------
-
 .. toctree::
    :maxdepth: 3
    :hidden:
-   :caption: o3api
+   :caption: O3as Components
 
    o3api/docs/source/index
+   o3skim/docs/index
 
 .. Add here the references after restructure the doc
 
-* :ref:`o3api/docs/source/index:O3as REST API`: O3as REST API
+* :ref:`o3api/docs/source/index:O3as REST API`: O3as REST API 
 * :ref:`o3api/docs/source/o3apirefs:o3api reference`: o3api references
-* <TBD>
 
-
-O3as Skimming (o3skim)
------------------------------------------
-
-.. toctree::
-   :maxdepth: 3
-   :hidden:
-   :caption: o3skim
-
-   o3skim/docs/index
-
-* :ref:`o3skim/docs/index:Getting started`: Start skimming your ozone data.
-* :ref:`o3skim/docs/index:Developer guide`: Customize and support learning the details.
-* :ref:`o3skim/docs/index:Authors`: Authors and acknowledgements.
+.. 
+   * :ref:`o3skim/docs/index:Getting started`: Start skimming your ozone data.
+.. 
+   * :ref:`o3skim/docs/index:Developer guide`: Customize and support learning the details.
+.. 
+   * :ref:`o3skim/docs/index:Authors`: Authors and acknowledgements.
 
 
 Indices and tables
-=========================================
+---------------------------------------
 
 * :ref:`genindex`
 * :ref:`modindex`

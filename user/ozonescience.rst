@@ -1,11 +1,3 @@
-**********************
-User documentation
-**********************
-O3as tutorial (online course)
------------------------------
-
-**Ttitle: O3AS Thematic Service**
-
 **Description of the course**:
 
 This course introduces you to ozone science: why ozone is important for
@@ -14,7 +6,8 @@ service, how it can be used for simple analysis and a more advanced one.
 In the advanced section we show the underlying software technologies we
 are using.
 
-1. Ozone introduction
+Ozone introduction
+------------------
 
    1. Role of ozone for our life
 
@@ -42,7 +35,8 @@ radiation not only has an effect of the health of human beings it also
 has an effect on vegetation it is important to monitor stratospheric
 ozone.
 
-2. Ozone hole and ozone assessment
+Ozone hole and ozone assessment
+-------------------------------
 
 With support of the World Meteorological Organization (WMO), the United
 Nations Environment Programme (UNEP), NASA, NOAA, and the European
@@ -70,7 +64,8 @@ published in 1985, since 1994 they appear quadrennially.
 
 5. What is done to publicize the state of ozone every four years?
 
-   4. Ozone simulations and observations (e.g. CCMI, SBUV etc)
+Ozone simulations and observations (e.g. CCMI, SBUV etc)
+---------------------------------------------------------
 
 There is a huge effort to predict the future development of
 stratospheric ozone under different scenarios. These scenarios are
@@ -84,7 +79,8 @@ then they can be compared. For a more robust prediction of the behaviour
 of future ozone an average of all the model realizations can be produced
 to make a multi model mean so that a more robust prediction can be made.
 
-5. Total Column Ozone, zonal mean
+Total Column Ozone, zonal mean
+------------------------------
 
 The model results for the ozone data can come in different units, like
 volume or mass mixing ratios, partial pressure, number densities or
@@ -190,7 +186,8 @@ integrating over the altitudes and then taking the zonal mean across the
 longitudes. Of these values time series can be plotted to see the trend
 in future ozone over different latitude bands.
 
-6. Total Column Ozone, Return curves
+Total Column Ozone, Return curves
+----------------------------------
 
 As mentioned in the previous section, the time series of total column
 ozone (zonally averaged) can be normalized using satellite observations
