@@ -18,7 +18,11 @@ figures of stratospheric ozone trends in publication quality, in a coherent way.
    :maxdepth: 3
    :caption: Ozone Science
 
-   user/ozonescience
+   ozonescience/introduction
+   ozonescience/simulations
+   ozonescience/tco3_zm
+   ozonescience/tco3_return
+   ozonescience/quizzes
 
 .. O3as for Users
 
@@ -29,31 +33,27 @@ figures of stratospheric ozone trends in publication quality, in a coherent way.
    user/userdocs
 
 
-O3as Components
----------------------------------------
+.. O3API
 .. toctree::
    :maxdepth: 3
-   :hidden:
-   :caption: O3as Components
+   :caption: O3API
 
    o3api/docs/source/index
+
+.. O3SKIM
+.. toctree::
+   :maxdepth: 3
+   :caption: O3SKIM
+
    o3skim/docs/index
 
-.. Add here the references after restructure the doc
+.. * :ref:`o3skim/docs/index:Getting started`: Start skimming your ozone data.
+.. * :ref:`o3skim/docs/index:Developer guide`: Customize and support learning the details.
+.. * :ref:`o3skim/docs/index:Authors`: Authors and acknowledgements.
 
-* :ref:`o3api/docs/source/index:O3as REST API`: O3as REST API 
-* :ref:`o3api/docs/source/o3apirefs:o3api reference`: o3api references
-
-.. 
-   * :ref:`o3skim/docs/index:Getting started`: Start skimming your ozone data.
-.. 
-   * :ref:`o3skim/docs/index:Developer guide`: Customize and support learning the details.
-.. 
-   * :ref:`o3skim/docs/index:Authors`: Authors and acknowledgements.
-
-
-Indices and tables
----------------------------------------
+Indices and Tables
+===================
+.. sidebar menu for index, modindex, search is added via layout.html in _templates
 
 * :ref:`genindex`
 * :ref:`modindex`
