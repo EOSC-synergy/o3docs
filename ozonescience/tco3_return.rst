@@ -1,5 +1,15 @@
-Total Column Ozone, Return curves
+Total Column Ozone, Return years
 ===================================
+
+.. figure:: ../_static/images/tco3_return-acp-2018-paper.png
+   :alt: Total Column Ozone, return years
+   :class: with-shadow
+   :scale: 60
+   :align: center
+
+   Estimated MMM1S return dates (red triangles) of total column ozone from 
+   the SEN-C2-fCH4 simulations for different latitude bands.
+   Credit: S.S. Dhomse et al., Supplement of Atmos. Chem. Phys., 18, 8409–8438, 2018
 
 As mentioned in the previous section, the time series of total column
 ozone (zonally averaged) can be normalized using satellite observations

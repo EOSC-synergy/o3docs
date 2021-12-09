@@ -2,7 +2,7 @@ Quizzes about Ozone Science
 ============================
 
 Quiz: Ozone Introduction
----------------------
+--------------------------
 
 #.  Why is stratospheric ozone important for life on Earth?
 

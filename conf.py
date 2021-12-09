@@ -18,7 +18,7 @@ sys.path.insert(0, os.path.abspath('./o3skim'))
 # -- Project information -----------------------------------------------------
 
 project = 'O3as: Ozone assessment service'
-copyright = '2021, B. Esteban, M. Hardt, T. Kerzenmacher, V. Kozlov (KIT)'
+copyright = '2021, Karlsruhe Institute of Technology (KIT)'
 author = 'B. Esteban, M. Hardt, T. Kerzenmacher, V. Kozlov (KIT)'
 
 

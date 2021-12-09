@@ -11,21 +11,34 @@ are using.
 Role of ozone for our life
 ---------------------------
 
-Ozone is a trace gas in the Earth’s atmosphere, that means that it only
-occurs in very small quantities on Earth. Trace gases are gases that are
-not nitrogen (78.1%), oxygen (20.9%) or argon (0.934%), i.e. they make
-up only about 0.066% of the atmosphere (not including water which makes
-up about 4%. If all the ozone were compressed to the pressure at the
+.. figure:: ../_static/images/ozone_layers-nasa.jpg
+   :alt: The ozone layer shields life on Earth
+   :target: https://scied.ucar.edu/learning-zone/atmosphere/ozone-layer
+   :class: with-shadow
+   :scale: 90
+   :align: center
+
+   The ozone layer in the stratosphere shields life on Earth from most UV-B and UV-C, 
+   the most harmful varieties of ultraviolet radiation. Credit: NASA
+
+`Ozone <https://en.wikipedia.org/wiki/Ozone>`__ is a 
+`trace gas <https://en.wikipedia.org/wiki/Trace_gas>`__ in the Earth’s atmosphere, 
+that means that it only occurs in very small quantities on Earth. 
+Trace gases are gases that are not nitrogen (78.1%), oxygen (20.9%) 
+or argon (0.934%), i.e. they make up only about 0.066% of 
+the atmosphere (not including water which makes up about 4%). 
+If all the ozone were compressed to the pressure at the
 Earth's surface (at 1013 hPa and 0°C) then the atmospheric content of
 ozone would make up a layer of 3 mm (which is equivalent to 300 Dobson
-Units (DU)) . The highest content of ozone is found in the stratosphere
+Units (DU)). The highest content of ozone is found in the stratosphere
 at a height of about 25 to 30 km where the concentrations are about 10
 parts per million parts of air (ppm), i.e. 0.001%.
 
 The ozone present in the stratosphere at about 25 to 30 km is what makes
 up most ozone in the atmosphere. This ozone is important for life on
 planet Earth because it is responsible for removing most of the harmful
-ultraviolet (UV) radiation from the sun. The longwave UV-A radiation
+`ultraviolet (UV) <https://en.wikipedia.org/wiki/Ultraviolet>`__ 
+radiation from the Sun. The longwave UV-A radiation
 (about 315–400 nm) is not absorbed, medium range UV-B radiation (about
 280–315 nm) is mostly absorbed and the most dangerous shortwave UV-C
 radiation (about 100–280 nm) is totally absorbed by the ozone layer. A

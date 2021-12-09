@@ -1,6 +1,17 @@
 Total Column Ozone, zonal mean
 ===============================
 
+.. figure:: ../_static/images/tco3_zm-acp-2018-paper.png
+   :alt: Total Column Ozone, zonal mean
+   :class: with-shadow
+   :scale: 60
+   :align: center
+
+   Total column ozone time series for Antarctic in October from 19 
+   individual CCMs for the REF-C2 simulations with respect to 
+   mean 1980–1984 observations. The dashed black line indicates 1980 reference value. 
+   Credit: S.S. Dhomse et al., Atmos. Chem. Phys., 18, 8409–8438, 2018
+
 The model results for the ozone data can come in different units, like
 volume or mass mixing ratios, partial pressure, number densities or
 ozone density. Those units can be converted into each other:
@@ -27,9 +38,9 @@ The volume mixing ratio is given in ppmv (parts per million,
 ..
 
    mO\ :sub:`3` = vmrO\ :sub:`3` × 1.66
-   (mol_m_o:sub:`3`/mol_m_air=48/28.9)
+   (mol_m_O\ :sub:`3`/mol_m_air = 48/28.9)
 
--  Ozone number density NO\ :sub:`3` [molecules/cm:sup:`3`]:
+-  Ozone number density NO\ :sub:`3` [molecules/cm\ :sup:`3`]:
 
 ..
 
@@ -46,7 +57,7 @@ ratio is given in ppmv, pressure in hPa and temperature in K.
 
    vmrO\ :sub:`3` = pO\ :sub:`3` / pressure
 
--  Ozone density ρO\ :sub:`3` [μg/m:sup:`3`]:
+-  Ozone density ρO\ :sub:`3` [μg/m\ :sup:`3`]:
 
 ..
 
@@ -59,11 +70,11 @@ ratio is given in ppmv, pressure in hPa and temperature in K.
 
    vmrO\ :sub:`3` = mO\ :sub:`3` × 0.602
 
--  Ozone number density NO3 [molecules/cm3]:
+-  Ozone number density NO\ :sub:`3` [molecules/cm\ :sup:`3`]:
 
 ..
 
-   vmrO3 = NO3 × 1.38 × 10\ :sup:`-19` × temperature / pressure
+   vmrO\ :sub:`3` = NO\ :sub:`3` × 1.38 × 10\ :sup:`-19` × temperature / pressure
 
 (http://www.meteo.mcgill.ca/hydroxyl/wiki/doku.php?id=ozone from Thilo
 Erbertseder, Frank Baier, last modified: October 2005)
