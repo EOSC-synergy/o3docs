@@ -30,8 +30,9 @@ figures of stratospheric ozone trends in publication quality, in a coherent way.
    :maxdepth: 3
    :caption: O3as for Users
 
-   user/userdocs
-
+   user/o3asproject
+   user/getstarted
+   user/guide
 
 .. O3API
 .. toctree::
