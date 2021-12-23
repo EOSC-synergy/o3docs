@@ -2,9 +2,11 @@
    sphinx-quickstart on Tue Oct 20 11:14:36 2020.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
-
+************************************************
 O3as: Ozone assessment service's documentation
-==========================================================
+************************************************
+
+
 O3as is a service within the framework of the European Open Science Cloud - Synergy (`EOSC-Synergy <https://www.eosc-synergy.eu/>`_) project, 
 mainly for scientists working on the Chemistry-Climate Model Initiative (`CCMI <http://blogs.reading.ac.uk/ccmi/ccmi-phase-two/>`_) 
 for the quadrennial global `assessment of ozone depletion <https://www.esrl.noaa.gov/csl/assessments/ozone/2018/>`_ due in 2022. 
@@ -39,7 +41,9 @@ figures of stratospheric ozone trends in publication quality, in a coherent way.
    :maxdepth: 3
    :caption: O3API
 
-   o3api/docs/source/index
+   o3api/docs/source/introduction
+   o3api/docs/source/apiendpoints
+   o3api/docs/source/apireference
 
 .. O3SKIM
 .. toctree::

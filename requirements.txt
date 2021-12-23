@@ -1,4 +1,5 @@
 sphinx
 sphinx_rtd_theme
--e o3api/
+-r o3api/requirements.txt
+-r o3api/test-requirements.txt
 -e o3skim/
