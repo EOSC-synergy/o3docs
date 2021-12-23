@@ -48,7 +48,8 @@ echo "[INFO] Build Target: ${BUILDTARGET}"
 if [ -d "${DocsSrc}/.git" ]; then
     echo "[INFO] .git in ${DocsSrc} is FOUND. Using LOCAL folder. Updating git submodules..."
     echo "[INFO] Git Branch to use: ${DOCSREPO_BRANCH}"
-    cd ${DocsSrc} && Git_Clone=$(git checkout ${DOCSREPO_BRANCH} && git submodule update --init --recursive)
+#    cd ${DocsSrc} && Git_Clone=$(git checkout ${DOCSREPO_BRANCH} && git submodule update --init --recursive)
+    cd ${DocsSrc} && Git_Clone=$(git checkout ${DOCSREPO_BRANCH} && git submodule update --remote --merge)
 else
     echo "[INFO] .git in ${DocsSrc} is NOT found. Cloning REMOTE ${DOCSREPO}..."
     echo "[INFO] Git Branch to use: ${DOCSREPO_BRANCH}"

@@ -17,9 +17,9 @@ sys.path.insert(0, os.path.abspath('./o3skim'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'O3as: Ozone assessment service'
-copyright = '2020, B. Esteban, M. Hardt, T. Kerzenmacher, V. Kozlov (KIT)'
-author = 'B. Esteban, M. Hardt, T. Kerzenmacher, V. Kozlov (KIT)'
+project = u'O3as: Ozone assessment service'
+copyright = u'2021, Karlsruhe Institute of Technology (KIT)'
+author = u'B. Esteban, M. Hardt, T. Kerzenmacher, V. Kozlov (KIT)'
 
 
 # -- General configuration ---------------------------------------------------
@@ -36,7 +36,8 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
-    'sphinx.ext.autosectionlabel'
+    'sphinx.ext.autosectionlabel',
+    'sphinxcontrib.openapi'
 ]
 autosectionlabel_prefix_document = True
 
@@ -61,3 +62,26 @@ html_theme = 'sphinx_rtd_theme'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+html_logo = '_static/images/o3as-logo.svg'
+
+html_css_files = [
+    'css/custom.css',
+]
+
+# A string of reStructuredText that will be included at the end of every source file that is read.
+# Add substitutions here that should be available in every file
+rst_epilog = """
+.. |br| raw:: html
+
+   <br/>
+
+.. |contact-us| replace:: `contact us <mailto:o3as-support@lists.kit.edu>`__
+
+.. |o3as-web-link| replace:: `https://o3as.data.kit.edu <https://o3as.data.kit.edu>`__
+
+.. |o3api-swagger-link| replace:: `https://api.o3as.fedcloud.eu/api/v1/ui/ <https://api.o3as.fedcloud.eu/api/v1/ui/>`__
+
+.. |o3api-gitlab| replace:: `o3api GitLab repository <https://git.scc.kit.edu/synergy.o3as/o3api>`__
+
+"""
