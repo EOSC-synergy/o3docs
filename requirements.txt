@@ -1,5 +1,8 @@
 sphinx
 sphinx_rtd_theme
--r o3api/requirements.txt
+sphinxcontrib-youtube
+sphinx-copybutton
+Sphinx-Substitution-Extensions
 -r o3api/test-requirements.txt
+-r o3api/requirements.txt
 -e o3skim/
