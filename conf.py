@@ -41,7 +41,8 @@ extensions = [
     'sphinxcontrib.openapi',
     'sphinxcontrib.youtube',
     'sphinx-prompt',
-    'sphinx_substitution_extensions'
+    'sphinx_substitution_extensions',
+    'nbsphinx'
 ]
 autosectionlabel_prefix_document = True
 
