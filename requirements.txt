@@ -3,6 +3,7 @@ sphinx_rtd_theme
 sphinxcontrib-youtube
 sphinx-copybutton
 Sphinx-Substitution-Extensions
+ipykernel
 nbsphinx
 -r o3api/test-requirements.txt
 -r o3api/requirements.txt

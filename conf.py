@@ -52,7 +52,7 @@ templates_path = ['_templates']
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build', 'docs_out', 'Thumbs.db', '.DS_Store', '**.ipynb_checkpoints']
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -75,7 +75,7 @@ html_css_files = [
 ]
 
 # Force the "Edit on Github" button to use the configured URL
-gitlab_url = 'https://git.scc.kit.edu/synergy.o3as/o3docs'
+github_url = 'https://git.scc.kit.edu/synergy.o3as/o3docs'
 
 # A string of reStructuredText that will be included at the beginning of every source file that is read
 rst_prolog = """
