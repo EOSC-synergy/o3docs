@@ -1,19 +1,15 @@
 # o3docs
 
-[![Documentation Status](https://readthedocs.org/projects/o3as/badge/?version=dev)](https://o3as.readthedocs.io/en/latest/?badge=dev)
-
-----
-'dev' branch!**
-
-----
+[![Documentation Status](https://readthedocs.org/projects/o3as/badge/?version=latest)](https://o3as.readthedocs.io/en/latest/?badge=latest)
 
 
-This is a placeholder for the O3as service (and VO, the Virtual Organisation) for the
-Ozone Assessment.
+This repository contains source files for the O3as (Ozone Assessment) Service documentation.
+
+The main entrypoint is [https://o3as.data.kit.edu](https://o3as.data.kit.edu)
 
 This initiative is part of the [EOSC-Synergy](https://www.eosc-synergy.eu) Project.
 
-The code documentation can currently be found here: [O3as code documentation](https://o3as.readthedocs.io).
+The code documentation is published here: [O3as code documentation](https://o3as.readthedocs.io).
 
-Contact Marcus Hardt or Tobias Kerzenmacher for further information.
+For any suggestions and feedback, plese, contact the developers.
 
