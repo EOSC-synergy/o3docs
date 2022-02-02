@@ -1,11 +1,7 @@
 # o3docs
 
-[![Documentation Status](https://readthedocs.org/projects/o3as/badge/?version=dev)](https://o3as.readthedocs.io/en/latest/?badge=dev)
+[![Documentation Status](https://readthedocs.org/projects/o3as/badge/?version=tutorial)](https://o3as.readthedocs.io/en/latest/?badge=tutorial)
 
-----
-'dev' branch!**
-
-----
 
 
 This is a placeholder for the O3as service (and VO, the Virtual Organisation) for the
