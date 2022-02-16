@@ -2,6 +2,7 @@ sphinx
 sphinx_rtd_theme
 sphinxcontrib-youtube
 sphinx-copybutton
+sphinx-prompt
 Sphinx-Substitution-Extensions
 ipykernel
 nbsphinx
