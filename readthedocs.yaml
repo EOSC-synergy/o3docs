@@ -1,0 +1,13 @@
+version: 2
+
+# Set the version of Python and OS to build docs
+build:
+  os: ubuntu-20.04
+  tools:
+    python: "3.8"
+
+# Optionally declare the Python requirements required to build your docs
+# o3docs file has also links to o3api/requirements and o3skim/requirements
+python:
+  install:
+    - requirements: requirements.txt
