@@ -11,3 +11,7 @@ build:
 python:
   install:
     - requirements: requirements.txt
+
+# account for docs in o3api/ and o3skim/
+submodules:
+  include: all
