@@ -24,6 +24,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
         curl \
         git \
         nano \
+        pandoc \
         procps \
         python3-dev \
         python3-pip \
