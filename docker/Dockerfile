@@ -39,7 +39,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
 
 WORKDIR /srv/
 
-ENV DOCSREPO "https://git.scc.kit.edu/synergy.o3as/o3docs"
+ENV DOCSREPO "https://codebase.helmholtz.cloud/m-team/o3as/o3docs"
 ENV DOCSREPO_BRANCH "master"
 ENV BUILDTARGET "html"
 ENV HOSTUSER 1000

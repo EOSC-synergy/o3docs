@@ -2,7 +2,7 @@ Getting Started
 ================
 
 #.  Main entry point to our service is |o3as-web-link|. There you find a general information about the service and links to corresponding resources 
-    like this `documentation site <https://o3as.readthedocs.org>`__, `git repository <https://git.scc.kit.edu/synergy.o3as>`__, `docker hub organization <https://hub.docker.com/u/o3as>`__ etc.
+    like this `documentation site <https://o3as.readthedocs.org>`__, `git repository <https://codebase.helmholtz.cloud/m-team/o3as>`__, `docker hub organization <https://hub.docker.com/u/o3as>`__ etc.
     
     .. note::
    

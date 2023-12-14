@@ -53,6 +53,6 @@ O3as solution
 *  The reduced data (100's MB) can be accessed with the **REST API** in seconds (**o3api** component)
 *  A user may do final processing and plotting by leveraging the **WebApp** (**o3webapp** *to come*)
 
-All components are `open source <https://git.scc.kit.edu/synergy.o3as>`__ (GPLv3), documented, implemented with continuous
+All components are `open source <https://codebase.helmholtz.cloud/m-team/o3as>`__ (GPLv3), documented, implemented with continuous
 integration and delivery (CI/CD) based on Jenkins (`JePL <https://indigo-dc.github.io/jenkins-pipeline-library>`__), and dockerised: o3skim is run
 via `udocker <https://github.com/indigo-dc/udocker>`__ in HPC, o3api and o3webapp are in the cloud (Kubernetes cluster).

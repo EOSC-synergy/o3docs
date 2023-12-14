@@ -75,7 +75,7 @@ html_css_files = [
 ]
 
 # Force the "Edit on Github" button to use the configured URL
-github_url = 'https://git.scc.kit.edu/synergy.o3as/o3docs'
+github_url = 'https://codebase.helmholtz.cloud/m-team/o3as/o3docs'
 
 # A string of reStructuredText that will be included at the beginning of every source file that is read
 rst_prolog = """
@@ -120,6 +120,6 @@ rst_epilog = """
 
 .. |o3api-swagger-link| replace:: `https://api.o3as.fedcloud.eu/api/v1/ui/ <https://api.o3as.fedcloud.eu/api/v1/ui/>`__
 
-.. |o3api-gitlab| replace:: `o3api GitLab repository <https://git.scc.kit.edu/synergy.o3as/o3api>`__
+.. |o3api-gitlab| replace:: `o3api GitLab repository <https://codebase.helmholtz.cloud/m-team/o3as/o3api>`__
 
 """
